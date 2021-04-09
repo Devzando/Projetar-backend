@@ -1,5 +1,5 @@
 const router = require('express').Router()
 
-router.get('/', (req, res) => res.status(200).send({ "message": 'é só o bolado' }))
+router.get('/', (req, res) => console.log(path.resolve('src', 'database')))
 
 module.exports = router
