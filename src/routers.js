@@ -1,5 +1,6 @@
 const router = require('express').Router()
+const UserController = require('./controllers/UserController')
 
-router.get('/', (req, res) => console.log(path.resolve('src', 'database')))
+router.post('/register', UserController.create)
 
 module.exports = router
